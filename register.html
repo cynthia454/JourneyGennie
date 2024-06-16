@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('b1.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); 
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #666;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-group input[type="submit"], .form-group input[type="button"] {
+      background-color: orange;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .form-group input[type="submit"]:hover, .form-group input[type="button"]:hover {
+      background-color: darkorange;
+    }
+
+    .form-group p {
+      margin-top: 10px;
+      text-align: center;
+      color: #666;
+    }
+
+    .form-group p a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .form-group p a:hover {
+      text-decoration: underline;
+    }
+
+    input::placeholder {
+      color: white;
+    }
+
+    input:focus {
+      background: white;
+      color: black;
+    }
+
+    .otp-group {
+      display: none;
+    }
+  </style>
+  <script>
+    // function showOtpInput() {
+    //   const method = document.querySelector('input[name="otp_method"]:checked').value;
+    //   document.getElementById('registration-form').style.display = 'none';
+    //   document.getElementById('otp-form').style.display = 'block';
+    //   document.getElementById('otp-method-chosen').innerText = method === 'email' ? 'Email' : 'Phone';
+    // }
+
+    // function registerUser() {
+    //   const formData = new FormData(document.getElementById('registration-form'));
+    //   fetch('register.php', {
+    //     method: 'POST',
+    //     body: formData
+    //   })
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     if (data.success) {
+    //       showOtpInput();
+    //     } else {
+    //       alert(data.message);
+    //     }
+    //   })
+    //   .catch(error => {
+    //     console.error('Error:', error);
+    //   });
+    // }
+
+    // function verifyOtp() {
+    //   const formData = new FormData(document.getElementById('otp-form'));
+    //   fetch('verify_otp.php', {
+    //     method: 'POST',
+    //     body: formData
+    //   })
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     if (data.success) {
+    //       alert('Registration successful!');
+    //       window.location.href = 'login.html';
+    //     } else {
+    //       alert(data.message);
+    //     }
+    //   })
+    //   .catch(error => {
+    //     console.error('Error:', error);
+    //   });
+    // }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h3>Register</h3>
+    <form id="registration-form" action="register.php" method="POST">
+      <div class="form-group">
+        <label for="fname">Full Name:</label>
+        <input type="text" id="fname" name="fullname" placeholder="Enter your Fullname" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      
+      
+      <div class="form-group">
+        <input type="submit" value="Register now" name="submit">
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </div>
+    </form>
+    
+  </div>
+</body>
+</html>

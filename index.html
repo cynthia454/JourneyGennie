@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Journey Gennie</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .box {
+            flex: 1;
+            margin: 20px;
+        }
+        .box h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .box a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .credit {
+            font-size: 14px;
+            margin-top: 30px;
+        }
+        .credit span {
+            color: #ffcc00;
+        }
+        .services {
+            padding: 2rem 0;
+        }
+        .services .heading {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .services .heading span {
+            font-size: 2rem;
+            color: orange;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        .services .heading span:hover {
+            transform: scale(1.2);
+        }
+        .services .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .services .box-container .box {
+            flex: 1 1 30rem;
+            border-radius: .5rem;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .services .box-container .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.7);
+            background-color: whitesmoke;
+        }
+        .services .box-container .box i {
+            padding: 1rem;
+            font-size: 5rem;
+            color: orange;
+        }
+        .services .box-container .box h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        .services .box-container .box h5 {
+            font-size: 1.5rem;
+            color: #666;
+        }
+    </style>
+    <style >
+        .packages .box-container .box .content .price span{
+        color: darkgray;
+        font-size: 1.5rem;
+        text-decoration: line-through;
+    </style>
+</head>
+<body>
+<header>
+	<div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>J</span>ourney<span>G</span>ennie</a>
+	<nav class="navbar">
+		<a href="#home">Home</a>
+		<a href="#packages">Packages </a>
+        <a href="#services">Services </a>
+        <a href="profile.php">Profile </a>
+	</nav>
+	<div class="icons">
+    <i class="fas fa-user" id="login-btn"></i>      
+</div>
+
+<script>
+    document.getElementById("login-btn").addEventListener("click", function() {
+        window.location.href = "login.html";
+    });
+</script>
+</header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventure is Worthwhile</h3>
+            <p>Discover new places with us, Adventure awaits</p>
+            <p>Your wish is our command</p>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="Vid-5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="Vid-5.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+<section class="packages" id="packages">
+	<h1 class="heading">
+		<span>P</span>
+		<span>A</span>
+		<span>C</span>
+		<span>K</span>
+		<span>A</span>
+		<span>G</span>
+		<span>E</span>
+		<span>S</span>	
+	</h1>
+	<div class="box-container">
+		<div class="box">
+			<img src="palawan.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-marker-alt"></i>Palawan</h3>				        
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>				
+				</div>
+				<div class="price">₱49,000<span>₱49,601.59</span> </div>
+				<a href="destination_palawan.html" class="btn">Book Now</a>				
+			</div>			
+		</div>
+		<div class="box">
+			<img src="boracay.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-marker-alt"></i>Baguio</h3>    
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>				
+				</div>
+				<div class="price">P22,000 <span>₱22,477.8</span> </div>
+				<a href="destination_baguio.html" class="btn">Book Now</a>				
+			</div>			
+		</div>
+		<div class="box">
+			<img src="bohol.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-marker-alt"></i>Bohol</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>				
+				</div>
+				<div class="price">₱35,000<span>₱35,552</span> </div>
+				<a href="destination_bohol.html" class="btn">Book Now</a>				
+			</div>			
+		</div>
+		<div class="box">
+			<img src="cebu.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-marker-alt"></i>Cebu</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>				
+				</div>
+				<div class="price">₱45,000 <span>₱45,500</span> </div>
+				<a href="destination_cebu.html" class="btn">Book Now</a>				
+			</div>			
+		</div>
+		<div class="box">
+			<img src="davao.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-marker-alt"></i>Davao</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>				
+				</div>
+				<div class="price">₱37,000 <span>₱37,500</span> </div>
+				<a href="destination_davao.html" class="btn">Book Now</a>				
+			</div>			
+		</div>
+		<div class="box">
+			<img src="siargao.jpg" alt="">
+			<div class="content">
+				<h3> <i class="fas fa-map-marker-alt"></i>Siargao</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>				
+				</div>
+				<div class="price">₱37,000<span>₱37,350</span> </div>
+				<a href="destination_siargao.html" class="btn">Book Now</a>				
+			</div>			
+		</div>
+        
+	</div>
+    </section>
+<section class="services" id="services">
+        <h1 class="heading">
+            <span>S</span>
+            <span>E</span>
+            <span>R</span>
+            <span>V</span>
+            <span>I</span>
+            <span>C</span>
+            <span>E</span>
+            <span>S</span>  
+        </h1>
+        <div class="box-container">
+           <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>Affordable Hotels</h3>
+                <h5>Discover comfortable yet affordable accommodations that won't break the bank. Our selection of budget-friendly hotels offers convenience, quality, and value for your stay. Whether you're traveling for business or leisure, explore our range of options to find the perfect fit for your needs.</h5>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>Food and Drinks</h3>
+                <h5>Explore diverse culinary delights at our restaurants, featuring gourmet and local favorites to satisfy every palate. Enjoy handcrafted cocktails, freshly brewed coffee, and tantalizing dishes made with the finest ingredients for a memorable dining experience.</h5>
+            </div>
+           <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Safety Guide</h3>
+                <h5>Guest safety is our top priority. Our safety guide outlines enhanced cleaning protocols and social distancing measures for a worry-free experience. Rest assured, our dedicated team is committed to providing a safe environment for all.</h5>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Around the World</h3>
+                <h5>Embark on a global journey to iconic landmarks and hidden gems. Immerse yourself in diverse cultures, culinary delights, and unforgettable memories. Whether you seek adventure, relaxation, or cultural enrichment, let your wanderlust guide you to new horizons.</h5>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>Fastest Travel</h3>
+                <h5>Experience swift and efficient transportation with our high-speed travel options. Whether by air or rail, enjoy the fastest routes available and spend more time at your destination. Discover how our services can help you travel quickly and conveniently, maximizing your valuable time.</h5>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventures</h3>
+                <h5>Experience thrilling outdoor adventures like hiking, rock climbing, and zip-lining in our rugged landscapes. Immerse yourself in nature, push your limits, and create lasting memories. Whether you seek excitement, challenge, or connection with the outdoors, our adventures ignite wanderlust.</h5>
+            </div>
+        </div>
+
+    </section>
+    <section class="footer">
+        <div class="box-container">
+           <div class="box">
+    <h3>About Us</h3>
+    <h5>Welcome to Journey Genie, your gateway to unforgettable adventures! We craft extraordinary travel experiences that immerse you in the world's beauty. With personalized service and a commitment to excellence, we exceed your expectations. Join us to explore breathtaking destinations, create lasting memories, and make your travel dreams a reality. Your wish, our command!</h5>  
+</div>
+            <div class="box">
+                <h3>Branch Location</h3>
+                <p>Luzon</p><br>
+                <p>Vissayas</p><br>
+                <p>Mindanao</p><br>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#packages">Packages</a> 
+                <a href="#services">Services</a>
+                <a href="profile.php">Profile</a>                                
+            </div>
+             <div class="box">
+            <h3>Follow us</h3>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/search/top/?q=journey%20Gennie" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/journeygennie/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/@GennieJour58696" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/journey-gennie-0853ab312/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>            
+    </div>
+    <h1 class="credit">Created by <span>BSIT Bonafied Student</span> | all rights reserved!</h1>
+    <h1 class="credit">Disclaimer: This System is for educational purpose only. No Copyright Infringement Intended!</h1>
+</section>
+<script src ="script.js"></script>
+</body>
+</html>

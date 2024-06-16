@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(39477.jpg);
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            margin: 20px 0;
+        }
+        .container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .container input, .container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .container button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .container button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Booking Form</h1>
+    <form action="submit_booking.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+            <option value="j_boutique">J Boutique El Nido</option>
+            <option value="morgan_villas">Morgan Villas</option>
+            <option value="nacpan_beach">Nacpan Beach (El Nido)</option>
+            <option value="alon_villas">Alon Villas</option>
+            <option value="Paolyn Houseboats Coron Island">Paolyn Houseboats Coron Island</option>
+            <option value="Baguio Botanical Garden">Baguio Botanical Garden</option>
+            <option value="Tam-awan Village">Tam-awan Village</option>
+            <option value="Casa Generosa">Casa Generosa</option>
+            <option value="Amare La Cucina">Amare La Cucina</option>
+            <option value="Burnham Park (Baguio)">Burnham Park (Baguio)</option>
+            <option value="Baguio City Tour (Private Tour)">Baguio City Tour (Private Tour)</option>
+            <option value="Bilar Man-Made Forest">Bilar Man-Made Forest</option>
+            <option value="Panglao: Dao, Forests, and Tarsier Sanctuary Tour">Panglao: Dao, Forests, and Tarsier Sanctuary Tour</option>
+            <option value="Loboc Riverwatch Floating Resto - Bohol Floating Restaurant">Loboc Riverwatch Floating Resto - Bohol Floating Restaurant</option>
+            <option value="Chocolate Hills">Chocolate Hills</option>
+            <option value="Danao Adventure Park">Danao Adventure Park</option>
+            <option value="The Old Plantation">The Old Plantation</option>
+            <option value="Whale Shark & Tumalog Falls">Whale Shark & Tumalog Falls</option>
+            <option value="TOslob Whale Shark Watching">TOslob Whale Shark Watching</option>
+            <option value="Mactan Island Hopping with Lunch">Mactan Island Hopping with Lunch</option>
+            <option value="Moalboal Sardines Run Private Tour">Moalboal Sardines Run Private Tour</option>
+            <option value="(Cebu Taoist, Temple of Leah and Sirao Garden)">(Cebu Taoist, Temple of Leah and Sirao Garden)</option>
+            <option value="Scuba Diving Experience beach entry in Mactan">Scuba Diving Experience beach entry in Mactan</option>
+            <option value="Malagos Garden Resort">Malagos Garden Resort</option>
+            <option value="Philippine Eagle Center/Shopping">Philippine Eagle Center/Shopping</option>
+            <option value="Davao Crocodile Park">Davao Crocodile Park</option>
+            <option value="D' Bone Collector Museum">D' Bone Collector Museum</option>
+            <option value="Davao City Tour">Davao City Tour</option>
+            <option value="Banana Beach">Banana Beach</option>
+            <option value="Siargao Island Hopping & land Tour">Siargao Island Hopping & land Tour</option>
+            <option value="Siargao Sohoton + Club Tara + Tiktikan Lagoon">Siargao Sohoton + Club Tara + Tiktikan Lagoon</option>
+            <option value="Secret beach and Coral Garden Full-Day Tour">Secret beach and Coral Garden Full-Day Tour</option>
+            <option value="Siargao Land Tour (Shared Tour)">Siargao Land Tour (Shared Tour)</option>
+            <option value="Siargao Land Tour">Siargao Land Tour</option>
+            <option value="Siargao Sugba Lagoon And Magpupungko">Siargao Sugba Lagoon And Magpupungko</option>
+
+
+
+            
+        </select>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</div>
+
+</body>
+</html>

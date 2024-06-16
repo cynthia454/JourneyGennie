@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(39477.jpg);
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            margin: 20px 0;
+        }
+        .container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .container input, .container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .container button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .container button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Booking Form</h1>
+    <form action="submit_booking.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+            <option value="Palawan Package">Palawan</option>
+            <option value="Baguio Package">Baguio</option>
+            <option value="Bohol Package">Bohol</option>
+            <option value="Cebu Package">Cebu</option>
+            <option value="Davao Package">Davao</option>
+            <option value="Siargao Package">Siargao</option>
+        </select>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</div>
+
+</body>
+</html>
